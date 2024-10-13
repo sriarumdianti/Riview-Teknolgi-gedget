@@ -1,0 +1,157 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ff6600;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px);
+    background-color: #f4f4f4;
+}
+
+.hero {
+    position: relative;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.hero img {
+    width: 100%;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.overlay .left-text, .overlay .right-form {
+    color: white;
+    padding: 20px;
+}
+
+.overlay .left-text {
+    max-width: 50%;
+}
+
+.overlay .right-form {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 40%;
+}
+
+.overlay h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    font-size: 18px;
+}
+
+.overlay h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.overlay form {
+    display: flex;
+    flex-direction: column;
+}
+
+.overlay label {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.overlay input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.overlay button {
+    padding: 10px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.overlay button:hover {
+    background-color: #e65c00;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .overlay {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .overlay .left-text, .overlay .right-form {
+        max-width: 100%;
+    }
+
+    .overlay h1 {
+        font-size: 24px;
+    }
+
+    .overlay p {
+        font-size: 14px;
+    }
+
+    .overlay h2 {
+        font-size: 20px;
+    }
+
+    .overlay input, .overlay button {
+        font-size: 14px;
+    }
+}
